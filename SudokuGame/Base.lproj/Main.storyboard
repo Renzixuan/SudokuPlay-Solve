@@ -150,6 +150,87 @@
                                                                 <rect key="frame" x="283" y="1" width="30" height="30"/>
                                                             </variation>
                                                         </textField>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Urf-uV-CbO">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="5" y="3" width="28" height="26"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeP-Ow-iCD">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="40" y="3" width="28" height="26"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqS-kz-cTM">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="74" y="3" width="28" height="26"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uSc-mS-bbm">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="109" y="3" width="28" height="26"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73h-X8-54W">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="145" y="3" width="28" height="26"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rT-yJ-Yh5">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="179" y="3" width="28" height="26"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5f-iO-v95">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="214" y="3" width="28" height="26"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ma1-Ub-r81">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="249" y="3" width="28" height="26"/>
+                                                            </variation>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DJ-Tu-wlh">
+                                                            <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="284" y="3" width="28" height="26"/>
+                                                            </variation>
+                                                        </label>
                                                     </subviews>
                                                     <variation key="default">
                                                         <mask key="subviews">
@@ -162,6 +243,15 @@
                                                             <exclude reference="pSD-Kl-WLd"/>
                                                             <exclude reference="10z-WO-xQB"/>
                                                             <exclude reference="16L-GG-T0l"/>
+                                                            <exclude reference="Urf-uV-CbO"/>
+                                                            <exclude reference="SeP-Ow-iCD"/>
+                                                            <exclude reference="pqS-kz-cTM"/>
+                                                            <exclude reference="uSc-mS-bbm"/>
+                                                            <exclude reference="73h-X8-54W"/>
+                                                            <exclude reference="2rT-yJ-Yh5"/>
+                                                            <exclude reference="m5f-iO-v95"/>
+                                                            <exclude reference="Ma1-Ub-r81"/>
+                                                            <exclude reference="1DJ-Tu-wlh"/>
                                                         </mask>
                                                     </variation>
                                                     <variation key="heightClass=regular-widthClass=compact">
@@ -175,19 +265,37 @@
                                                             <include reference="pSD-Kl-WLd"/>
                                                             <include reference="10z-WO-xQB"/>
                                                             <include reference="16L-GG-T0l"/>
+                                                            <include reference="Urf-uV-CbO"/>
+                                                            <include reference="SeP-Ow-iCD"/>
+                                                            <include reference="pqS-kz-cTM"/>
+                                                            <include reference="uSc-mS-bbm"/>
+                                                            <include reference="73h-X8-54W"/>
+                                                            <include reference="2rT-yJ-Yh5"/>
+                                                            <include reference="m5f-iO-v95"/>
+                                                            <include reference="Ma1-Ub-r81"/>
+                                                            <include reference="1DJ-Tu-wlh"/>
                                                         </mask>
                                                     </variation>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outletCollection property="rowCells" destination="aMr-h8-Cag" id="jAO-PS-zP7"/>
-                                                    <outletCollection property="rowCells" destination="Xoh-z0-VGs" id="cbm-Ci-CdM"/>
-                                                    <outletCollection property="rowCells" destination="10z-WO-xQB" id="2nH-Zj-1S7"/>
-                                                    <outletCollection property="rowCells" destination="ELH-Xj-Scv" id="h6Z-F0-eWS"/>
-                                                    <outletCollection property="rowCells" destination="SQg-EC-S3a" id="LjB-L5-nbV"/>
-                                                    <outletCollection property="rowCells" destination="CQb-At-sDJ" id="sGn-M1-iMC"/>
-                                                    <outletCollection property="rowCells" destination="M1t-hy-yVp" id="7pA-EU-X4H"/>
-                                                    <outletCollection property="rowCells" destination="pSD-Kl-WLd" id="UHN-kb-gdT"/>
-                                                    <outletCollection property="rowCells" destination="16L-GG-T0l" id="05K-HR-HwT"/>
+                                                    <outletCollection property="rowCells" destination="aMr-h8-Cag" collectionClass="NSMutableArray" id="jAO-PS-zP7"/>
+                                                    <outletCollection property="rowCells" destination="Xoh-z0-VGs" collectionClass="NSMutableArray" id="cbm-Ci-CdM"/>
+                                                    <outletCollection property="rowCells" destination="10z-WO-xQB" collectionClass="NSMutableArray" id="2nH-Zj-1S7"/>
+                                                    <outletCollection property="rowCells" destination="ELH-Xj-Scv" collectionClass="NSMutableArray" id="h6Z-F0-eWS"/>
+                                                    <outletCollection property="rowCells" destination="SQg-EC-S3a" collectionClass="NSMutableArray" id="LjB-L5-nbV"/>
+                                                    <outletCollection property="rowCells" destination="CQb-At-sDJ" collectionClass="NSMutableArray" id="sGn-M1-iMC"/>
+                                                    <outletCollection property="rowCells" destination="M1t-hy-yVp" collectionClass="NSMutableArray" id="7pA-EU-X4H"/>
+                                                    <outletCollection property="rowCells" destination="pSD-Kl-WLd" collectionClass="NSMutableArray" id="UHN-kb-gdT"/>
+                                                    <outletCollection property="rowCells" destination="16L-GG-T0l" collectionClass="NSMutableArray" id="05K-HR-HwT"/>
+                                                    <outletCollection property="rowLabels" destination="Urf-uV-CbO" id="Ncg-Sk-CRt"/>
+                                                    <outletCollection property="rowLabels" destination="SeP-Ow-iCD" id="er8-sc-APu"/>
+                                                    <outletCollection property="rowLabels" destination="pqS-kz-cTM" id="3ru-Ip-M5O"/>
+                                                    <outletCollection property="rowLabels" destination="uSc-mS-bbm" id="fP2-TZ-kDb"/>
+                                                    <outletCollection property="rowLabels" destination="73h-X8-54W" id="UpK-38-I1l"/>
+                                                    <outletCollection property="rowLabels" destination="2rT-yJ-Yh5" id="MGk-Tv-ykU"/>
+                                                    <outletCollection property="rowLabels" destination="m5f-iO-v95" id="Csa-AB-TXm"/>
+                                                    <outletCollection property="rowLabels" destination="Ma1-Ub-r81" id="1md-hN-JKU"/>
+                                                    <outletCollection property="rowLabels" destination="1DJ-Tu-wlh" id="KSG-IA-le8"/>
                                                 </connections>
                                             </tableViewCell>
                                             <tableViewCell contentMode="scaleToFill" restorationIdentifier="basicCell2" selectionStyle="default" indentationWidth="10" reuseIdentifier="basicCell2" rowHeight="33" id="MWK-he-aFM" customClass="MiddleTableViewCell">
@@ -297,15 +405,15 @@
                                                     </variation>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outletCollection property="rowCells2" destination="7uG-mE-N9B" id="bF4-gH-KYW"/>
-                                                    <outletCollection property="rowCells2" destination="4sj-qB-2jZ" id="xCa-Ov-3LA"/>
-                                                    <outletCollection property="rowCells2" destination="ayp-H6-vxG" id="dY4-nE-Ewo"/>
-                                                    <outletCollection property="rowCells2" destination="hE7-vj-OcN" id="a59-BL-mJT"/>
-                                                    <outletCollection property="rowCells2" destination="9Ga-x8-sjK" id="XqU-se-cP1"/>
-                                                    <outletCollection property="rowCells2" destination="udV-Wf-dZk" id="nH9-tB-tyy"/>
-                                                    <outletCollection property="rowCells2" destination="wPO-st-QIu" id="9oO-W6-7vN"/>
-                                                    <outletCollection property="rowCells2" destination="kJp-0K-h3F" id="j8z-ch-Meb"/>
-                                                    <outletCollection property="rowCells2" destination="0qk-S5-gf1" id="Scw-Hb-OCv"/>
+                                                    <outletCollection property="rowCells2" destination="7uG-mE-N9B" collectionClass="NSMutableArray" id="bF4-gH-KYW"/>
+                                                    <outletCollection property="rowCells2" destination="4sj-qB-2jZ" collectionClass="NSMutableArray" id="xCa-Ov-3LA"/>
+                                                    <outletCollection property="rowCells2" destination="ayp-H6-vxG" collectionClass="NSMutableArray" id="dY4-nE-Ewo"/>
+                                                    <outletCollection property="rowCells2" destination="hE7-vj-OcN" collectionClass="NSMutableArray" id="a59-BL-mJT"/>
+                                                    <outletCollection property="rowCells2" destination="9Ga-x8-sjK" collectionClass="NSMutableArray" id="XqU-se-cP1"/>
+                                                    <outletCollection property="rowCells2" destination="udV-Wf-dZk" collectionClass="NSMutableArray" id="nH9-tB-tyy"/>
+                                                    <outletCollection property="rowCells2" destination="wPO-st-QIu" collectionClass="NSMutableArray" id="9oO-W6-7vN"/>
+                                                    <outletCollection property="rowCells2" destination="kJp-0K-h3F" collectionClass="NSMutableArray" id="j8z-ch-Meb"/>
+                                                    <outletCollection property="rowCells2" destination="0qk-S5-gf1" collectionClass="NSMutableArray" id="Scw-Hb-OCv"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>

@@ -45,93 +45,93 @@ NSUInteger grid[9][9];
     //init grid here, set up the game.
     //row one
     grid[0][0] = 0;
-    grid[0][1] = 0;
+    grid[0][1] = 1;
     grid[0][2] = 0;
-    grid[0][3] = 0;
+    grid[0][3] = 6;
     grid[0][4] = 0;
     grid[0][5] = 0;
-    grid[0][6] = 0;
-    grid[0][7] = 1;
-    grid[0][8] = 2;
+    grid[0][6] = 3;
+    grid[0][7] = 0;
+    grid[0][8] = 0;
     //row two
-    grid[1][0] = 0;
+    grid[1][0] = 5;
     grid[1][1] = 0;
     grid[1][2] = 0;
     grid[1][3] = 0;
-    grid[1][4] = 0;
+    grid[1][4] = 3;
     grid[1][5] = 0;
     grid[1][6] = 0;
-    grid[1][7] = 0;
-    grid[1][8] = 3;
+    grid[1][7] = 1;
+    grid[1][8] = 8;
     //row three
     grid[2][0] = 0;
-    grid[2][1] = 0;
-    grid[2][2] = 2;
-    grid[2][3] = 3;
+    grid[2][1] = 2;
+    grid[2][2] = 0;
+    grid[2][3] = 5;
     grid[2][4] = 0;
     grid[2][5] = 0;
-    grid[2][6] = 4;
+    grid[2][6] = 0;
     grid[2][7] = 0;
     grid[2][8] = 0;
     //row four
-    grid[3][0] = 0;
+    grid[3][0] = 3;
     grid[3][1] = 0;
-    grid[3][2] = 1;
-    grid[3][3] = 8;
+    grid[3][2] = 0;
+    grid[3][3] = 0;
     grid[3][4] = 0;
     grid[3][5] = 0;
     grid[3][6] = 0;
-    grid[3][7] = 0;
-    grid[3][8] = 5;
+    grid[3][7] = 2;
+    grid[3][8] = 0;
     //row five
     grid[4][0] = 0;
-    grid[4][1] = 6;
+    grid[4][1] = 0;
     grid[4][2] = 0;
-    grid[4][3] = 0;
-    grid[4][4] = 7;
-    grid[4][5] = 0;
-    grid[4][6] = 8;
+    grid[4][3] = 7;
+    grid[4][4] = 0;
+    grid[4][5] = 4;
+    grid[4][6] = 0;
     grid[4][7] = 0;
     grid[4][8] = 0;
     //row six
     grid[5][0] = 0;
-    grid[5][1] = 0;
+    grid[5][1] = 9;
     grid[5][2] = 0;
     grid[5][3] = 0;
     grid[5][4] = 0;
-    grid[5][5] = 9;
+    grid[5][5] = 0;
     grid[5][6] = 0;
     grid[5][7] = 0;
-    grid[5][8] = 0;
+    grid[5][8] = 7;
     //row seven
     grid[6][0] = 0;
     grid[6][1] = 0;
-    grid[6][2] = 8;
-    grid[6][3] = 5;
+    grid[6][2] = 0;
+    grid[6][3] = 0;
     grid[6][4] = 0;
-    grid[6][5] = 0;
+    grid[6][5] = 6;
     grid[6][6] = 0;
-    grid[6][7] = 0;
+    grid[6][7] = 7;
     grid[6][8] = 0;
     //row eight
-    grid[7][0] = 9;
-    grid[7][1] = 0;
+    grid[7][0] = 1;
+    grid[7][1] = 5;
     grid[7][2] = 0;
     grid[7][3] = 0;
-    grid[7][4] = 4;
+    grid[7][4] = 9;
     grid[7][5] = 0;
-    grid[7][6] = 5;
+    grid[7][6] = 0;
     grid[7][7] = 0;
-    grid[7][8] = 0;
+    grid[7][8] = 2;
     //row nine
-    grid[8][0] = 4;
-    grid[8][1] = 7;
-    grid[8][2] = 0;
+    grid[8][0] = 0;
+    grid[8][1] = 0;
+    grid[8][2] = 6;
     grid[8][3] = 0;
     grid[8][4] = 0;
-    grid[8][5] = 6;
+    grid[8][5] = 3;
     grid[8][6] = 0;
-    grid[8][7] = 0;
+    grid[8][7] = 5;
     grid[8][8] = 0;
 
     }
@@ -201,7 +201,7 @@ NSUInteger grid[9][9];
         if (rowValid) {
             bool columnValid = [self checkColumn:cell withValue:value];
             if (columnValid) {
-                bool gridValid = [self checkGrid:cell withValue:value andBox:[self getBoxCells:cell]];
+                bool gridValid = [self checkGrid:cell withValue:value];
                 if (gridValid) {
                     grid[cell.row][cell.column] = value;
                     if ([self solveCell:cell]) {
@@ -240,47 +240,16 @@ NSUInteger grid[9][9];
     
 }
 
-//all the checks
-- (NSMutableArray*) getBoxCells: (Cell*)cell{
-    boxArray = [[NSMutableArray alloc]init];
-    if (cell.column < 3) {
-        if (cell.row < 3) {
-            boxArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithUnsignedInteger:grid[0][0]],[NSNumber numberWithUnsignedInteger:grid[0][1]],[NSNumber numberWithUnsignedInteger:grid[0][2]],[NSNumber numberWithUnsignedInteger:grid[1][0]],[NSNumber numberWithUnsignedInteger:grid[1][1]],[NSNumber numberWithUnsignedInteger:grid[1][2]],[NSNumber numberWithUnsignedInteger:grid[2][0]],[NSNumber numberWithUnsignedInteger:grid[2][1]],[NSNumber numberWithUnsignedInteger:grid[2][2]], nil];
-        }
-        else if (cell.row < 6)
-        {
-            boxArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithUnsignedInteger:grid[3][0]],[NSNumber numberWithUnsignedInteger:grid[3][1]],[NSNumber numberWithUnsignedInteger:grid[3][2]],[NSNumber numberWithUnsignedInteger:grid[4][0]],[NSNumber numberWithUnsignedInteger:grid[4][1]],[NSNumber numberWithUnsignedInteger:grid[4][2]],[NSNumber numberWithUnsignedInteger:grid[5][0]],[NSNumber numberWithUnsignedInteger:grid[5][1]],[NSNumber numberWithUnsignedInteger:grid[5][2]], nil];
-        }
-        else if (cell.row < 9){
-            boxArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithUnsignedInteger:grid[6][0]],[NSNumber numberWithUnsignedInteger:grid[6][1]],[NSNumber numberWithUnsignedInteger:grid[6][2]],[NSNumber numberWithUnsignedInteger:grid[7][0]],[NSNumber numberWithUnsignedInteger:grid[7][1]],[NSNumber numberWithUnsignedInteger:grid[7][2]],[NSNumber numberWithUnsignedInteger:grid[8][0]],[NSNumber numberWithUnsignedInteger:grid[8][1]],[NSNumber numberWithUnsignedInteger:grid[8][2]], nil];
-        }
-    }
-    else if (cell.column < 6){
-        if (cell.row < 3) {
-            boxArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithUnsignedInteger:grid[0][3]],[NSNumber numberWithUnsignedInteger:grid[0][4]],[NSNumber numberWithUnsignedInteger:grid[0][5]],[NSNumber numberWithUnsignedInteger:grid[1][3]],[NSNumber numberWithUnsignedInteger:grid[1][4]],[NSNumber numberWithUnsignedInteger:grid[1][5]],[NSNumber numberWithUnsignedInteger:grid[2][3]],[NSNumber numberWithUnsignedInteger:grid[2][4]],[NSNumber numberWithUnsignedInteger:grid[2][5]], nil];
-        }
-        else if (cell.row < 6)
-        {
-            boxArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithUnsignedInteger:grid[3][3]],[NSNumber numberWithUnsignedInteger:grid[3][4]],[NSNumber numberWithUnsignedInteger:grid[3][5]],[NSNumber numberWithUnsignedInteger:grid[4][3]],[NSNumber numberWithUnsignedInteger:grid[4][4]],[NSNumber numberWithUnsignedInteger:grid[4][5]],[NSNumber numberWithUnsignedInteger:grid[5][3]],[NSNumber numberWithUnsignedInteger:grid[5][4]],[NSNumber numberWithUnsignedInteger:grid[5][5]], nil];
-        }
-        else if (cell.row < 9){
-            boxArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithUnsignedInteger:grid[6][3]],[NSNumber numberWithUnsignedInteger:grid[6][4]],[NSNumber numberWithUnsignedInteger:grid[6][5]],[NSNumber numberWithUnsignedInteger:grid[7][3]],[NSNumber numberWithUnsignedInteger:grid[7][4]],[NSNumber numberWithUnsignedInteger:grid[7][5]],[NSNumber numberWithUnsignedInteger:grid[8][3]],[NSNumber numberWithUnsignedInteger:grid[8][4]],[NSNumber numberWithUnsignedInteger:grid[8][5]], nil];
-        }
-    }
-    else if (cell.column < 9){
-        if (cell.row < 3) {
-            boxArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithUnsignedInteger:grid[0][6]],[NSNumber numberWithUnsignedInteger:grid[0][7]],[NSNumber numberWithUnsignedInteger:grid[0][8]],[NSNumber numberWithUnsignedInteger:grid[1][6]],[NSNumber numberWithUnsignedInteger:grid[1][7]],[NSNumber numberWithUnsignedInteger:grid[1][8]],[NSNumber numberWithUnsignedInteger:grid[2][6]],[NSNumber numberWithUnsignedInteger:grid[2][7]],[NSNumber numberWithUnsignedInteger:grid[2][8]], nil];
-        }
-        else if (cell.row < 6)
-        {
-            boxArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithUnsignedInteger:grid[3][6]],[NSNumber numberWithUnsignedInteger:grid[3][7]],[NSNumber numberWithUnsignedInteger:grid[3][8]],[NSNumber numberWithUnsignedInteger:grid[4][6]],[NSNumber numberWithUnsignedInteger:grid[4][7]],[NSNumber numberWithUnsignedInteger:grid[4][8]],[NSNumber numberWithUnsignedInteger:grid[5][6]],[NSNumber numberWithUnsignedInteger:grid[5][7]],[NSNumber numberWithUnsignedInteger:grid[5][8]], nil];
-        }
-        else if (cell.row < 9){
-            boxArray = [NSMutableArray arrayWithObjects:[NSNumber numberWithUnsignedInteger:grid[6][6]],[NSNumber numberWithUnsignedInteger:grid[6][7]],[NSNumber numberWithUnsignedInteger:grid[6][8]],[NSNumber numberWithUnsignedInteger:grid[7][6]],[NSNumber numberWithUnsignedInteger:grid[7][7]],[NSNumber numberWithUnsignedInteger:grid[7][8]],[NSNumber numberWithUnsignedInteger:grid[8][6]],[NSNumber numberWithUnsignedInteger:grid[8][7]],[NSNumber numberWithUnsignedInteger:grid[8][8]], nil];
-        }
-    }
-    return boxArray;
-}
+////all the checks
+//- (NSMutableArray*) getBoxCells: (Cell*)cell{
+//    boxArray = [[NSMutableArray alloc]init];
+//    for (int row = (cell.row / 3) * 3; row < (cell.row / 3) * 3 + 3; row++)
+//        for (int col = (cell.column / 3) * 3; col < (cell.column / 3) * 3 + 3; col++)
+//            if (row != cell.row && col != cell.column && grid[row][col] == grid[cell.row][cell.column])
+//                return false;
+//    }
+//    return boxArray;
+//}
 
 -(BOOL)checkRow: (Cell*)cell withValue:(int)value{
     BOOL rowValid = false;
@@ -302,14 +271,17 @@ NSUInteger grid[9][9];
     return true;
 }
 
--(BOOL)checkGrid: (Cell*)cell withValue:(int)value andBox:(NSMutableArray*)gridArray{
-    BOOL gridValid = false;
-    for (int i = 0; i < 9; i++) {
-        if (value == [gridArray[i] integerValue])
-            return gridValid;
+-(BOOL)checkGrid: (Cell*)cell withValue:(int)value{
+    for (int row = ((cell.row) / 3) * 3; row < ((cell.row) / 3) * 3 + 3; row++){
+                for (int col = ((cell.column) / 3) * 3; col < (cell.column / 3) * 3 + 3; col++){
+                if (row != cell.row && col != cell.column && grid[row][col] == value)
+                return false;
+            }
     }
     return true;
 }
+
+
 
 -(void)endGame: (Cell*)cell{
     if (cell.row > 8) {
@@ -334,6 +306,7 @@ NSUInteger grid[9][9];
     }
 }
 
+
 //tableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
@@ -353,8 +326,9 @@ NSUInteger grid[9][9];
         TableViewCell *cell = [gridTableView dequeueReusableCellWithIdentifier:@"basicCell"];
         return cell;
     }
+     }
      
- }
+
 
 //dismiss keyboard
 -(void)dismissKeyboard:(id)sender{

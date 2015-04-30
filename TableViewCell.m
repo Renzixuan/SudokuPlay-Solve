@@ -10,7 +10,7 @@
 #import "ViewController.h"
 
 @implementation TableViewCell
-@synthesize rowCells;
+@synthesize rowCells,rowLabels;
 
 - (void)awakeFromNib {
     // Initialization code
@@ -20,6 +20,11 @@
             [rowCells[r] setBackgroundColor:[UIColor colorWithRed:200.0f/225.0f green:200.0f/225.0f blue:200.0f/225.0f alpha:1]];
             r++;
         }
+    }
+    
+    for (int n = 0; n < 9; n++) {
+        [(UILabel *)[self.rowLabels objectAtIndex:n] setText:@"1"];
+
     }
     
 }

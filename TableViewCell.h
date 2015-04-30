@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface TableViewCell : UITableViewCell
-@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *rowCells;
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSMutableArray *rowCells;
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *rowLabels;
 
 @end

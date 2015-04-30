@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MiddleTableViewCell : UITableViewCell
-@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *rowCells2;
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSMutableArray *rowCells2;
 
 @end

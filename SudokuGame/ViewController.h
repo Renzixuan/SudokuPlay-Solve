@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "cell.h"
+#import "TableViewCell.h"
 
 @interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate>
 
@@ -21,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UIView *resultView;
 @property (weak, nonatomic) IBOutlet UIView *sudokuView;
 @property (weak, nonatomic) IBOutlet UITableView *gridTableView;
+@property (nonatomic,strong) TableViewCell *rowCells;
 
 @end
 
